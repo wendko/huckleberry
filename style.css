@@ -1,12 +1,70 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+
+    --primary-green: hsl(160deg, 100%, 30%);
+    --secondary-gold-light: hsl(45deg, 100%, 50%);
+    --secondary-gold-dark: hsl(45deg, 100%, 40%);
+    --gray-black: hsl(0deg, 0%, 0%);
+    --gray-very-dark: hsl(0deg, 0%, 10%);
+    --gray-dark: hsl(0deg, 0%, 30%);
+    --gray-medium: hsl(0deg, 0%, 40%);
+    --gray-light: hsl(0deg, 0%, 60%);
+    --gray-white: hsl(0deg, 0%, 100%);
 }
 
+
 /* Add styles here! */
+.max-width-wrapper {
+    padding: 5% 20%;
+}
+
+@media only screen and (max-width: 800px) {
+    .max-width-wrapper {
+        padding: 5% 0%;
+    }
+}
+
+main > .max-width-wrapper {
+    background: var(--gray-light);
+    border-top: 8px solid var(--gray-medium);
+}
+
+.title {
+    margin: 2rem 0;
+}
+
+strong {
+    color: var(--primary-green);
+}
+
+
+.intro-chunk {
+    max-width: 18em;
+}
+
+.intro-chunk, .card {
+    padding: 16px 32px;
+}
+
+.card {
+    background: white;
+    width: fit-content;
+    border-bottom: 8px solid var(--gray-medium);
+}
+
+.indented-heading {
+    background: var(--secondary-gold-light);
+    border-bottom: 8px solid var(--secondary-gold-dark);
+    padding: 16px 32px;
+    width: fit-content;
+    margin-top: 0px;
+    margin-left: -48px;
+}
+
